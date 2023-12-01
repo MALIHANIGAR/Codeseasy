@@ -1,0 +1,3813 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP0Yeo9oG9YuA0Jq99Ez1MU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MALIHANIGAR/Codeseasy/blob/main/Lab_7\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "rSitPLlT9lAn",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bfb7cd30-5b63-47e0-b6de-f6caa4f01ed7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "Odd\n"
+          ]
+        }
+      ],
+      "source": [
+        "def even_checker(n):\n",
+        "  if n%2==0:\n",
+        "    x=\"even\"\n",
+        "    return x\n",
+        "  else:\n",
+        "    x=\"Odd\"\n",
+        "    return x\n",
+        "n=int(input())\n",
+        "print(even_checker(n))\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-1\n",
+        "def even_checker(n):\n",
+        "   if n%2==0:\n",
+        "     print(\"Even!!\")\n",
+        "   else:\n",
+        "     print(\"Odd!!\")\n",
+        "n=int(input())\n",
+        "even_checker(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tD5TuRDED1b-",
+        "outputId": "53168829-243d-48e8-913c-db1f501c88d9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "Even!!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def  even_checker(n):\n",
+        "  if n%2==0:\n",
+        "    print(\"Even!!\")\n",
+        "  else:\n",
+        "    print(\"Odd!!\")\n",
+        "n=int(input())\n",
+        "even_checker(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uMBfZJUrLEA4",
+        "outputId": "373bd2f0-43d4-446d-ca9b-78cb29a62036"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "Even!!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-2\n",
+        "def fibonacci(number):\n",
+        " a=0\n",
+        " b=1\n",
+        " sum=0\n",
+        " while (a<=number):\n",
+        "  print(a,end=\" \")\n",
+        "  x=a\n",
+        "  a=b\n",
+        "  b=x+a\n",
+        "  #print(a,end=\" \")\n",
+        "number=int(input())\n",
+        "fibonacci(number)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "R-7MqMJ_GK0I",
+        "outputId": "1a28f76c-fe58-4820-ba2f-13e12523b1dd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "0 1 1 2 3 5 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def fibonacci(number):\n",
+        "  a=0\n",
+        "  b=1\n",
+        "  sum=0\n",
+        "  while (a<=number):\n",
+        "    print(a,end=\" \")\n",
+        "    x=a\n",
+        "    a=b\n",
+        "    b=x+a\n",
+        "number=int(input())\n",
+        "fibonacci(number)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Aa8nIIzbL4nX",
+        "outputId": "9de7a5bc-87cd-462c-8e0e-7315e65f41ff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "0 1 1 2 3 5 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def fibonacci(n):\n",
+        "  a=0\n",
+        "  b=1\n",
+        "  sum=0\n",
+        "  while a<=n:\n",
+        "    print(a,end=\" \")\n",
+        "    x=a\n",
+        "    a=b\n",
+        "    b=x+a\n",
+        "n=int(input())\n",
+        "fibonacci(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "muefWTKRkbNm",
+        "outputId": "7a9de9dd-46f0-4882-a6be-c69cb349b0e3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "0 1 1 2 3 5 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def fibonacci(num):\n",
+        "    first=0\n",
+        "    second=1\n",
+        "    while first<=num:\n",
+        "        print(first, end=' ')\n",
+        "        temp = first\n",
+        "        first = second\n",
+        "        second = temp + second\n",
+        "\n",
+        "num=int(input('Enter the limit: '))\n",
+        "fibonacci(num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e7VAWcDz4Z45",
+        "outputId": "203cd3f0-9ccb-4628-d705-8ce86fc53d77"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the limit: 10\n",
+            "0 1 1 2 3 5 8 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def foo_moo(n):\n",
+        "    if n%2==0 and n%3==0:\n",
+        "        return \"FooMoo\"\n",
+        "    elif n%3==0:\n",
+        "        return \"Moo\"\n",
+        "    elif n%2==0 :\n",
+        "        return \"Foo\"\n",
+        "    else:\n",
+        "        return \"Boo\"\n",
+        "\n",
+        "n = int(input())\n",
+        "print(foo_moo(n))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d5uQrYoY4pY0",
+        "outputId": "d413dd33-0703-4f3c-95a4-a76eec5912ae"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "FooMoo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-3\n",
+        "def foo_moo(n):\n",
+        "  if n%2==0 and n%3==0:\n",
+        "    print(\"FooMoo\")\n",
+        "  elif n%2==0:\n",
+        "    print(\"Foo\")\n",
+        "  elif n%3==0:\n",
+        "    print(\"Moo\")\n",
+        "  #if n%2==0 and n%3==0:\n",
+        "    #print(\"FooMoo\")\n",
+        "  else:\n",
+        "    print(\"Boo\")\n",
+        "n=int(input())\n",
+        "foo_moo(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ks9bSPn8TSuu",
+        "outputId": "77364819-ed51-4bca-cc59-049653f55a45"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "17\n",
+            "Boo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def foo_moo(n):\n",
+        "  if n%2==0 and n%3==0:\n",
+        "    return  \"FooMoo\"\n",
+        "  elif n%2==0:\n",
+        "    return  \"Foo\"\n",
+        "  elif n%3==0:\n",
+        "    return  \"Moo\"\n",
+        "  else:\n",
+        "    return \"Boo\"\n",
+        "n=int(input())\n",
+        "print(foo_moo(n))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "E4fa9Ui_MpUo",
+        "outputId": "d1e26d13-4700-4cc0-9147-938c36d39f44"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "FooMoo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#practice\n",
+        "def foo_moo(n):\n",
+        "  if n%2==0 and n%3==0:\n",
+        "    return\"FooMoo\"\n",
+        "  elif n%2==0:\n",
+        "    return \"Foo\"\n",
+        "  elif n%3==0:\n",
+        "    return \"Moo\"\n",
+        "  #elif n%2==0 and n%3==0:\n",
+        "    #return\"FooMoo\"\n",
+        "  else:\n",
+        "    return \"Boo\"\n",
+        "n=int(input())\n",
+        "print(foo_moo(n))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t8Hx1oEgnEZb",
+        "outputId": "20e96241-3589-4828-c037-6d800f307b9a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "FooMoo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-4\n",
+        "def function_name(n):\n",
+        "  #n=str(input())\n",
+        "  count1=0\n",
+        "  count2=0\n",
+        "  for i in n:\n",
+        "    if ord(i)>=65 and ord(i)<=90:\n",
+        "      count1+=1\n",
+        "    elif ord(i)>=97 and ord(i)<=122:\n",
+        "      count2+=1\n",
+        "  print(\"No.of Uppercase characters:\",count1)\n",
+        "  print(\"No.of Lowercase Characters:\",count2)\n",
+        "n=str(input())\n",
+        "function_name(n)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uRcyN1myj-18",
+        "outputId": "b4f53d9a-5997-47e8-961b-7408d34afa4d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The quick Sand Man\n",
+            "No.of Uppercase characters: 3\n",
+            "No.of Lowercase Characters: 12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(n):\n",
+        "  count1=0\n",
+        "  count2=0\n",
+        "  for i in n:\n",
+        "    if 65<=ord(i)<=90:\n",
+        "      count1+=1\n",
+        "    elif 97<=ord(i)<=122:\n",
+        "      count2+=1\n",
+        "  print(\"No. of Uppercase characters :\",count1)\n",
+        "  print(\"No. of Lowercase Characters:\",count2)\n",
+        "n=input()\n",
+        "function_name(n)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p7wA29fFOCif",
+        "outputId": "71f9d4f6-057c-44f8-ec82-a516d29542bc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The quick Sand Man\n",
+            "No. of Uppercase characters : 3\n",
+            "No. of Lowercase Characters: 12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#practice\n",
+        "def function_name(n):\n",
+        "  count1=0\n",
+        "  count2=0\n",
+        "  for i in n:\n",
+        "    if ord(i)>=65 and ord(i)<=90:\n",
+        "      count1+=1\n",
+        "    elif ord(i)>=97 and ord(i)<=122:\n",
+        "      count2+=1\n",
+        "  print(\"Uppercase\",count1)\n",
+        "  print(\"Lowercase\",count2)\n",
+        "n=input()\n",
+        "function_name(n)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pBfk7p3OqyzU",
+        "outputId": "affe6cba-12cc-42c7-b6a9-3dbc6370e507"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The quick Sand Man\n",
+            "Uppercase 3\n",
+            "Lowercase 12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-5\n",
+        "def calculate_tax(age,salary,designation):\n",
+        "  if age<18:\n",
+        "    return 0\n",
+        "  elif designation==\"president\":\n",
+        "    return 0\n",
+        "  elif 10000<=salary<=20000:\n",
+        "    return salary*0.05\n",
+        "  elif salary>20000:\n",
+        "    return salary*0.01\n",
+        "age=int(input())\n",
+        "salary=int(input())\n",
+        "designation=str(input())\n",
+        "print(calculate_tax(age,salary,designation))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wwhRGowKq_Ls",
+        "outputId": "595c8cbe-050b-4eee-cdd6-a06ff72bb6ea"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20\n",
+            "18000\n",
+            "assistant manager\n",
+            "900.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calculate_tax(age, salary, designation):\n",
+        "    if age < 18:\n",
+        "        tax = 0\n",
+        "    elif designation == \"president\":\n",
+        "        tax = 0\n",
+        "    elif salary < 10000:\n",
+        "        tax = 0\n",
+        "    elif 10000 <= salary <= 20000:\n",
+        "        tax = salary * 0.05\n",
+        "    elif salary > 20000:\n",
+        "        tax = salary * 0.01\n",
+        "    return tax\n",
+        "\n",
+        "age = int(input())\n",
+        "salary = int(input())\n",
+        "designation = input()\n",
+        "result = calculate_tax(age, salary, designation)\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TLUAzGtJwLGY",
+        "outputId": "be0b6a5f-7d59-493c-98d7-ad66168740a0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20\n",
+            "18000\n",
+            "assistant manager\n",
+            "Calculated Tax: 900.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#practice\n",
+        "def calculate_tax(age,salary,designation):\n",
+        "   if age<18:\n",
+        "     return 0\n",
+        "   elif designation==\"President\":\n",
+        "     return 0\n",
+        "   elif salary<10000:\n",
+        "     return 0\n",
+        "   elif 10000<=salary<=20000:\n",
+        "     return .05*salary\n",
+        "   elif salary>20000:\n",
+        "     return .10*salary\n",
+        "age=int(input())\n",
+        "salary=int(input())\n",
+        "designation=input()\n",
+        "print(calculate_tax(age,salary,designation))\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w5MSwH8ztCwm",
+        "outputId": "8cad7149-1879-4656-9886-d445a013b8c4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20\n",
+            "22000\n",
+            "assistant manager\n",
+            "2200.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-6\n",
+        "def function_days(a):\n",
+        "  years=a//365\n",
+        "  x=a%365\n",
+        "  months=x//30\n",
+        "  days=x%30\n",
+        "  print(years,\"years\",months,\"months and\",days,\"days\")\n",
+        "a=int(input())\n",
+        "function_days(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V4tii4XABEVz",
+        "outputId": "55ac30e9-dd18-4bbd-df7e-304fda51cb2a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4330\n",
+            "11 years 10 months and 15 days\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(n):\n",
+        "  years=n//365\n",
+        "  x=n%365\n",
+        "  months=x//30\n",
+        "  days=x%30\n",
+        "  print(f\"{years} years, {months} months and {days} days\")\n",
+        "n=int(input())\n",
+        "function_name(n)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6T3GkOtoTUdf",
+        "outputId": "fb9cff9c-bdd2-4b71-d99e-0d230a7d74ff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4330\n",
+            "11 years, 10 months and 15 days\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(a):\n",
+        "  years=a//365\n",
+        "  x=a%365\n",
+        "  months=x//30\n",
+        "  days=x%30\n",
+        "  print(years,\"years\",\",\",months,\"months and\",days,\"days\")\n",
+        "a=int(input())\n",
+        "function_name(a)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1l9a2wx3yV63",
+        "outputId": "99d3e953-1bf1-4e93-b9db-f218e9a6cb1f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4330\n",
+            "11 years , 10 months and 15 days\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#def show_palindrom(n)\n",
+        "#task-7\n",
+        "def showPalindrome(line):\n",
+        "    #line = ''\n",
+        "    for i in range(1,usr_input+1):\n",
+        "       line+=str(i)\n",
+        "    for j in range(usr_input-1,0,-1):\n",
+        "        line+=str(j)\n",
+        "    return line\n",
+        "usr_input=int(input())\n",
+        "line=\"\"\n",
+        "\n",
+        "\n",
+        "print(showPalindrome(line))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V5yjAk1ZENOC",
+        "outputId": "c8fa72ea-790a-4868-89d5-d904b4e81d13"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "12321\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-7\n",
+        "def show_palindrome(line):\n",
+        "  for i in range(1,n+1):\n",
+        "    line+=str(i)\n",
+        "  for j in range(n-1,0,-1):\n",
+        "     line+=str(j)\n",
+        "  return line\n",
+        "n=int(input())\n",
+        "line=\"\"\n",
+        "print(show_palindrome(line))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wdg2LL1yHaoL",
+        "outputId": "c132806f-18a8-48ce-a063-8517b39c7f45"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "123454321\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def show_palindromic_triangle(line):\n",
+        "  for i in range(1,n+1):\n",
+        "    line+=str(i)\n",
+        "  for j in range(n-1,0,-1):\n",
+        "    line+=str(j)\n",
+        "  return line\n",
+        "n=int(input())\n",
+        "line=\"\"\n",
+        "print(show_palindromic_triangle(line))\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hkMZGvB0UUc2",
+        "outputId": "c29013e5-e0d0-4015-8866-27289909bb30"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "123454321\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def show_palindrom(line):\n",
+        "   for i in range(1,n+1):\n",
+        "     line+=str(i)\n",
+        "   for j in range(n-1,0,-1):\n",
+        "     line+=str(j)\n",
+        "   return line\n",
+        "n=int(input())\n",
+        "print(show_palindrom(line))\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K8W95NUOeLtH",
+        "outputId": "156e4d62-5708-4241-b7ae-c240e1649356"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "12321\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def show_palindrom(n):\n"
+      ],
+      "metadata": {
+        "id": "hapf3FaF1jOs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-8\n",
+        "def show_palindrome_triangle(num):\n",
+        "  for row in range(1,n+1):\n",
+        "    for space in range(0,n-row):\n",
+        "      print(\" \",end=\" \")\n",
+        "    for i in range(1,row+1):\n",
+        "      print(i,end=\" \")\n",
+        "    for j in range(row-1,0,-1):\n",
+        "      print(j,end=\" \")\n",
+        "    print()\n",
+        "n=int(input())\n",
+        "show_palindrome_triangle(n)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i4z0E4IiJ6Wr",
+        "outputId": "c38e5483-6b49-4ec6-d878-44cbdc09dea3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "        1 \n",
+            "      1 2 1 \n",
+            "    1 2 3 2 1 \n",
+            "  1 2 3 4 3 2 1 \n",
+            "1 2 3 4 5 4 3 2 1 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "mtZowkXdoAOw"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-8\n",
+        "def show_palindrom_triangle(num):\n",
+        "  for row in range(1,n+1):\n",
+        "    for space in range(0,n-row):\n",
+        "      print(\" \",end=\" \")\n",
+        "    for i in range(1,row+1):\n",
+        "      print(i,end=\" \")\n",
+        "    for j in range(row-1,0,-1):\n",
+        "      print(j,end=\" \")\n",
+        "    print()\n",
+        "n=int(input())\n",
+        "show_palindrom_triangle(n)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zqg6wOsVP4YZ",
+        "outputId": "540f7e80-99cd-4795-ed04-274177f2053f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "        1 \n",
+            "      1 2 1 \n",
+            "    1 2 3 2 1 \n",
+            "  1 2 3 4 3 2 1 \n",
+            "1 2 3 4 5 4 3 2 1 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "E_dBvXWLgRIu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def show_palindrom_triangle(number):\n",
+        "  for row in range(1,n+1):\n",
+        "    for space in range(0,n-row):\n",
+        "      print(\" \",end=\" \")\n",
+        "    for i in range(1,row+1):\n",
+        "      print(i,end=\" \")\n",
+        "    for j in range(row-1,0,-1):\n",
+        "      print(j,end=\" \")\n",
+        "    print=()\n",
+        "n=int(input())\n",
+        "show_palindrom_triangle(n)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 371
+        },
+        "id": "xp0PReoQpN-2",
+        "outputId": "b6b89b27-dafe-400d-b7b7-2c8e6aabd54c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "5\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "UnboundLocalError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mUnboundLocalError\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-24-e87843179c52>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      9\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     10\u001b[0m \u001b[0mn\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 11\u001b[0;31m \u001b[0mshow_palindrom_triangle\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mn\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     12\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m<ipython-input-24-e87843179c52>\u001b[0m in \u001b[0;36mshow_palindrom_triangle\u001b[0;34m(number)\u001b[0m\n\u001b[1;32m      2\u001b[0m   \u001b[0;32mfor\u001b[0m \u001b[0mrow\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mn\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0;32mfor\u001b[0m \u001b[0mspace\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mn\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0mrow\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m       \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\" \"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mend\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\" \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      5\u001b[0m     \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mrow\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m       \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mend\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\" \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mUnboundLocalError\u001b[0m: local variable 'print' referenced before assignment"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-9\n",
+        "import math\n",
+        "def area_circumference_generator(radius):\n",
+        "  a=[]\n",
+        "  area=math.pi*(n**2)\n",
+        "  a.append(area)\n",
+        "  circumference=2*math.pi*n\n",
+        "  a.append(circumference)\n",
+        "  b=tuple(a)\n",
+        "  c,d=b\n",
+        "  print(b)\n",
+        "  print('Area of the circle is', c,' and circumference is ',d)\n",
+        "  return area,circumference\n",
+        "n=float(input())\n",
+        "\n",
+        "print(area_circumference_generator(n))\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UtwEse5mUXlg",
+        "outputId": "ddcbebb5-3c66-4676-c9cb-8d5d7d3a2ca2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "(3.141592653589793, 6.283185307179586)\n",
+            "Area of the circle is 3.141592653589793  and circumference is  6.283185307179586\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(3.141592653589793, 6.283185307179586)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "def area_circumference_generator(r):\n",
+        "  a=[]\n",
+        "  area=math.pi*r**2\n",
+        "  a.append(area)\n",
+        "  circumference=2*math.pi*r\n",
+        "  a.append(circumference)\n",
+        "  b=tuple(a)\n",
+        "  c,d=b\n",
+        "  print(b)\n",
+        "  print(f\"Area of the circle is {c} and circumference is {d}\")\n",
+        "r=float(input())\n",
+        "area_circumference_generator(r)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2jdG4uS4Ygj_",
+        "outputId": "b9bfa0fe-c385-4628-a6ac-d33a19f36c37"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "(3.141592653589793, 6.283185307179586)\n",
+            "Area of the circle is 3.141592653589793 and circumference is 6.283185307179586\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "def area_circumference_generator(radius):\n",
+        "  x=[]\n",
+        "  circumference=2*math.pi*radius\n",
+        "  x.append(circumference)\n",
+        "  area=math.pi*radius**2\n",
+        "  x.append(area)\n",
+        "  b=tuple(x)\n",
+        "  c,d=b\n",
+        "  m=b\n",
+        "  return circumference,area\n",
+        "radius=int(input())\n",
+        "b=(area_circumference_generator(radius))\n",
+        "area,circumference=b\n",
+        "print(b)\n",
+        "print(\"circumference\",circumference,\"area\",area)\n",
+        "#print(area_circumference_generator(radius))\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yrMJBFR1QxNx",
+        "outputId": "af7a4520-d035-4890-eae1-3cfbe3bfe462"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "(6.283185307179586, 3.141592653589793)\n",
+            "circumference 3.141592653589793 area 6.283185307179586\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from math import pi\n",
+        "\n",
+        "def area_circumference_generator(r):\n",
+        "    area = pi * r * r\n",
+        "    circ = 2 * pi * r\n",
+        "    return (area, circ)\n",
+        "\n",
+        "\n",
+        "result = area_circumference_generator(1)\n",
+        "print(result)\n",
+        "area, circ = area_circumference_generator(1)\n",
+        "print(\"Area of the circle is\", area, \"and circumference is\", circ)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VM7axyA1Y9oN",
+        "outputId": "a46ab3ea-98eb-445b-dec1-8e4f8bdfa856"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(3.141592653589793, 6.283185307179586)\n",
+            "Area of the circle is 3.141592653589793 and circumference is 6.283185307179586\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-10\n",
+        "mylist=[]\n",
+        "x=int(input())\n",
+        "y=int(input())\n",
+        "mylist.append(x)\n",
+        "mylist.append(y)\n",
+        "mydict={}\n",
+        "mytuple=tuple(mylist)\n",
+        "m,n=mytuple\n",
+        "def make_square(starting,ending):\n",
+        "    for i in range(x,y+1):\n",
+        "     m=i**2\n",
+        "     mydict[i]=m\n",
+        "    return mydict\n",
+        "print(make_square(x,y))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f3juwIMTcOYn",
+        "outputId": "090ada11-561b-4af2-83c4-8dfe4f33cbb9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "3\n",
+            "{1: 1, 2: 4, 3: 9}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[]\n",
+        "x=int(input())\n",
+        "y=int(input())\n",
+        "a.append(x)\n",
+        "a.append(y)\n",
+        "mydict={}\n",
+        "mytuple=tuple(mylist)\n",
+        "m,n=mytuple\n",
+        "def my_square(starting,ending):\n",
+        "  for i in range(x,y+1):\n",
+        "    m=i**2\n",
+        "    mydict[i]=m\n",
+        "  return mydict\n",
+        "print(my_square(x,y))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4GzhfR5uaJnZ",
+        "outputId": "896b5bcf-8626-4243-8c3f-73d404a4522e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "3\n",
+            "{1: 1, 2: 4, 3: 9}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=(1,1,1,2,3,4,5,6,6,6,6,4,0,0,0)\n",
+        "def remDuplicate(x):\n",
+        "    unique_list=[]\n",
+        "    for item in x:\n",
+        "\n",
+        "        if item not in unique_list:\n",
+        "            unique_list.append(item)\n",
+        "        else:\n",
+        "            continue\n",
+        "\n",
+        "    a=unique_list\n",
+        "    a_tuple=tuple(a)\n",
+        "    return a_tuple\n",
+        "print(remDuplicate(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mIRd-_xmxRpP",
+        "outputId": "5900c602-5968-4de7-af97-68073844d739"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(1, 2, 3, 4, 5, 6, 0)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-11\n",
+        "my_tuple=(1,1,1,2,3,4,5,6,6,6,6,4,0,0,0)\n",
+        "\n",
+        "def remdublicate(my_tuple):\n",
+        "  mylist=[]\n",
+        "  for i in my_tuple:\n",
+        "    #mylist=[]\n",
+        "    if i not in mylist:\n",
+        "      mylist.append(i)\n",
+        "    else:\n",
+        "      continue\n",
+        "  a=mylist\n",
+        "  tuple1=tuple(a)\n",
+        "  return tuple1\n",
+        "print(remdublicate(my_tuple))\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "c8PJfqWPq-kP",
+        "outputId": "8b352cce-f0fe-49c0-bfcd-2a57207c3117"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(1, 2, 3, 4, 5, 6, 0)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-12\n",
+        "x=[1, 2, 3, 3, 3, 3, 4, 5, 8, 8]\n",
+        "list1=[]\n",
+        "def mixedlist(list1):\n",
+        "  count=0\n",
+        "  for i in x:\n",
+        "    if list1.count(i)<2:\n",
+        "      list1.append(i)\n",
+        "    else:\n",
+        "      count+=1\n",
+        "  print(\"removed\",count)\n",
+        "  return list1\n",
+        "print(mixedlist(list1))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l6wquSuhu-gB",
+        "outputId": "007c3d73-3eb2-4648-acb8-0d3eb85ff49b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "removed 2\n",
+            "[1, 2, 3, 3, 4, 5, 8, 8]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=[1, 2, 3, 3, 3, 3, 4, 5, 8, 8]\n",
+        "#list1=[]\n",
+        "def function_name(x):\n",
+        "  count=0\n",
+        "  list1=[]\n",
+        "  for i in x:\n",
+        "    if list1.count(i)<2:\n",
+        "      list1.append(i)\n",
+        "    else:\n",
+        "      count+=1\n",
+        "  print(\"removed\",count)\n",
+        "  return list1\n",
+        "print(function_name(x))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1mgZ_JPw0-t8",
+        "outputId": "00dba4f0-0e58-4429-8379-fde7da44237b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "removed 2\n",
+            "[1, 2, 3, 3, 4, 5, 8, 8]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-13\n",
+        "def function_name(opt,num1,num2):\n",
+        "  if opt==\"+\":\n",
+        "    x=num1+num2\n",
+        "    return x\n",
+        "  elif opt==\"-\":\n",
+        "    x=num1-num2\n",
+        "    return x\n",
+        "  elif opt==\"/\":\n",
+        "    x=num1/num2\n",
+        "    return x\n",
+        "  elif opt==\"*\":\n",
+        "    x=num1*num2\n",
+        "    return x\n",
+        "opt=input()\n",
+        "num1=float(input())\n",
+        "num2=float(input())\n",
+        "print(function_name(opt,num1,num2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rye25tk373iq",
+        "outputId": "73212b23-c356-4537-f027-b4c06c84f6a3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "*\n",
+            "5.5\n",
+            "2.5\n",
+            "13.75\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(x,y,z):\n",
+        "  if x==\"+\":\n",
+        "    m=y+z\n",
+        "    return m\n",
+        "  elif x==\"-\":\n",
+        "    m=y-z\n",
+        "    return m\n",
+        "  elif x==\"/\":\n",
+        "    m=y/z\n",
+        "    return m\n",
+        "  elif x==\"*\":\n",
+        "    m=y*z\n",
+        "    return m\n",
+        "x=input()\n",
+        "y=int(input())\n",
+        "z=int(input())\n",
+        "print(function_name(x,y,z))\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "updEB9G55juP",
+        "outputId": "1c5e2dda-d9cb-49a6-cd8a-e988e3b295f3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/\n",
+            "1\n",
+            "2\n",
+            "0.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#task-14\n",
+        "def function_name(sentence,position):\n",
+        "  a=\"\"\n",
+        "  b=\"\"\n",
+        "  for i in range(0,len(sentence)):\n",
+        "    if i!=0 and i%position==0:\n",
+        "      a+=sentence[i]\n",
+        "    else:\n",
+        "      b+=sentence[i]\n",
+        "  return b+a\n",
+        "sentence=str(input())\n",
+        "position=int(input())\n",
+        "print(function_name(sentence,position))\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sZ3XQvOG_p1M",
+        "outputId": "e178a616-c2c7-4c0d-8094-6f12b4c97d72"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter sentence: I love programming.\n",
+            "Enter position: 3\n",
+            "I lveprgrmmngo oai.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(sentence,position):\n",
+        "  a=\"\"\n",
+        "  b=\"\"\n",
+        "  for i in range(0,len(sentence)):\n",
+        "    if i!=0 and i%position==0:\n",
+        "      a+=sentence[i]\n",
+        "    else:\n",
+        "      b+=sentence[i]\n",
+        "  return b+a\n",
+        "sentence=input()\n",
+        "position=int(input())\n",
+        "print(function_name(sentence,position))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rAsMSYZUDj2O",
+        "outputId": "fa299390-764f-48de-acd6-07aa6607036d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I love programming\n",
+            "3\n",
+            "I lveprgrmmngo oai\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(order_items,location=\"Dhanmondi\"):\n",
+        "  diction={\"Rice\":105,\"Potato\":20,\"Chicken\":250,\"Beef\":510,\"Beef\":510,\"Oil\":85}\n",
+        "  total_price=0\n",
+        "  for i in order_items:\n",
+        "    total_price+=diction[i]\n",
+        "    if location.lower()==\"dhanmondi\":\n",
+        "      total_price+=30\n",
+        "    else:\n",
+        "      total_price+=70\n",
+        "  return total_price\n",
+        "order_items=input(\"Enter order items\")[1:-1].split(\",\")\n",
+        "location=input()\n",
+        "print(function_name(order_items,location))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 371
+        },
+        "id": "YI2aXrfkHLoz",
+        "outputId": "292347d4-b316-4c4d-d5fa-7eb458148bd9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter order itemsRice,Beef,Rice\n",
+            "Dhaka\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "KeyError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-13-688610505e07>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     11\u001b[0m \u001b[0morder_items\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Enter order items\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msplit\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\",\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     12\u001b[0m \u001b[0mlocation\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 13\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfunction_name\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0morder_items\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mlocation\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m<ipython-input-13-688610505e07>\u001b[0m in \u001b[0;36mfunction_name\u001b[0;34m(order_items, location)\u001b[0m\n\u001b[1;32m      3\u001b[0m   \u001b[0mtotal_price\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m   \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0morder_items\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 5\u001b[0;31m     \u001b[0mtotal_price\u001b[0m\u001b[0;34m+=\u001b[0m\u001b[0mdiction\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      6\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mlocation\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlower\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m==\u001b[0m\u001b[0;34m\"dhanmondi\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      7\u001b[0m       \u001b[0mtotal_price\u001b[0m\u001b[0;34m+=\u001b[0m\u001b[0;36m30\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyError\u001b[0m: 'ice'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(item,location=\"Dhanmondi\"):\n",
+        "  temp1=[]\n",
+        "  temp=\"\"\n",
+        "  value=0\n",
+        "  c={\"Rice\":105,\"Potato\":20,\"Chicken\":250,\"Beef\":510,\"Oil\":85}\n",
+        "  for j,k in c.items():\n",
+        "    for i in a:\n",
+        "     if i==\",\":\n",
+        "        temp1.append(temp)\n",
+        "     else:\n",
+        "       temp+=i\n",
+        "    if temp:\n",
+        "      temp1.append(temp)\n",
+        "\n",
+        "      if i==k:\n",
+        "        value+=k\n",
+        "        if location==\"Dhanmondi\":\n",
+        "          value+=30\n",
+        "        else:\n",
+        "          value+=70\n",
+        "  return value\n",
+        "a=input()\n",
+        "print(function_name(a,\"Mohakhali\"))\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "CN9vQORnHUz7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f665c859-3821-47e3-80be-4cddf613dd5a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "rice,beef\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def groceryStore(cost,location) :\n",
+        "    sum=0\n",
+        "    a_dict={'Rice':105,'Potato':20,'Chicken':250,'Beef':510,'Oil':85}\n",
+        "    order=[str(x) for x in input().split()]\n",
+        "\n",
+        "    for i in order:\n",
+        "        if i in a_dict:\n",
+        "            sum += a_dict[i]\n",
+        "    total=sum\n",
+        "    if location=='Dhanmondi':\n",
+        "        total=total+30\n",
+        "    else:\n",
+        "      total=total+70\n",
+        "    return total\n",
+        "\n",
+        "print(groceryStore(sum,location='Dhanmondi'))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V91tRPwGJhDK",
+        "outputId": "c67e39e9-75ca-44a9-ed0f-5bb325b71e7c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "rice beef\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "5.0%3"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_9ZZrPQBmO2B",
+        "outputId": "180989e0-9a10-4303-cb8d-784d4004da62"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(x,y=\"Danmondi\"):\n",
+        "   counter=0\n",
+        "   a={'Rice':105,'Potato':20,'Chicken':250,'Beef':510,'Oil':85}\n",
+        "   for i in x:\n",
+        "     if i in a:\n",
+        "       counter+=a[i]\n",
+        "     else:\n",
+        "       counter+=1\n",
+        "   return counter\n",
+        "function_name(\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 200
+        },
+        "id": "XZbPJwmsP46j",
+        "outputId": "ea9dd87d-b06e-447d-def9-bce0f02a074c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-25-00a926ffb28d>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      8\u001b[0m        \u001b[0mcounter\u001b[0m\u001b[0;34m+=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m    \u001b[0;32mreturn\u001b[0m \u001b[0mcounter\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 10\u001b[0;31m \u001b[0mfunction_name\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0my\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"Dhanmondi\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'x' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#6\n",
+        "def func(n):\n",
+        "    year = n//365\n",
+        "    mon = n%365\n",
+        "    month = mon//30\n",
+        "    days = mon%30\n",
+        "    print(year , 'years,',month, 'months and',days,'days' )\n",
+        "\n",
+        "n = int(input())\n",
+        "func(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "D2tlSGHJ7bXc",
+        "outputId": "2f051be6-f054-4209-87a7-aaafdccf2699"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4330\n",
+            "11 years, 10 months and 15 days\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#4\n",
+        "def function_name():\n",
+        "    usrinput=str(input())\n",
+        "    counter=0\n",
+        "    counter1=0\n",
+        "    for char in usrinput:\n",
+        "        if 65<= ord(char)<=90:\n",
+        "            counter+=1\n",
+        "        elif 97<= ord(char) <= 122:\n",
+        "            counter1+=1\n",
+        "    print('No. of Uppercase characters:',counter)\n",
+        "    print('No. of Lowercase Characters:',counter1)\n",
+        "\n",
+        "\n",
+        "function_name()\n"
+      ],
+      "metadata": {
+        "id": "wYJa_C9d9FrZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(n):\n",
+        "  counter=0\n",
+        "  counter1=0\n",
+        "  for ch in functin_name:\n",
+        "    if 65"
+      ],
+      "metadata": {
+        "id": "mpQdfqrSXCSV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "def area_circumference_(r):\n",
+        "  are=math.pi*r**2\n",
+        "  circ=2*math.pi*r\n",
+        "  return area,circ\n",
+        "a,c=area_cicumference(1)\n",
+        "print(a,c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 218
+        },
+        "id": "J87RsXJ6-ZWS",
+        "outputId": "ebe34182-2adb-42d5-deca-2399aa441187"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-6-370adc16ad23>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      4\u001b[0m   \u001b[0mcirc\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mmath\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpi\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mr\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m   \u001b[0;32mreturn\u001b[0m \u001b[0marea\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mcirc\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m \u001b[0ma\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mc\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0marea_cicumference\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ma\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mc\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'area_cicumference' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1=[]\n",
+        "num1=int(input('Enter starting number: '))\n",
+        "list1.append(num1)\n",
+        "num2=int(input('Enter ending number: '))\n",
+        "list1.append(num2)\n",
+        "a_dict={}\n",
+        "\n",
+        "a_tuple=tuple(list1)\n",
+        "a,b=a_tuple\n",
+        "def makeSquare(starting,ending):\n",
+        "    for i in range(num1,num2+1):\n",
+        "        a=i*i\n",
+        "        a_dict[i]=a\n",
+        "    return a_dict\n",
+        "print(makeSquare(num1,num2))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GK88suXRB6Px",
+        "outputId": "7bb14a51-13ac-4ed1-e8d4-15e5e8383837"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter starting number: 5\n",
+            "Enter ending number: 9\n",
+            "{5: 25, 6: 36, 7: 49, 8: 64, 9: 81}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#10\n",
+        "def make_square(t):\n",
+        "  res={}\n",
+        "  n1=t[0]\n",
+        "  n2=t[1]\n",
+        "  for i in range(n1,n2+1):\n",
+        "    res[i]=i**2\n",
+        "  print(res)\n",
+        "make_square((1,3))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RY-6uK2lCueR",
+        "outputId": "2ed5668b-7229-4907-dfe1-dc0c33aaa0e4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1: 1, 2: 4, 3: 9}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#13\n",
+        "def numfuction(opt,num1,num2):\n",
+        "    if opt =='+':\n",
+        "        x=num1+num2\n",
+        "        return x\n",
+        "    elif opt=='-':\n",
+        "        x=num1-num2\n",
+        "        return x\n",
+        "    elif opt=='*':\n",
+        "        x=num1*num2\n",
+        "        return x\n",
+        "    elif opt=='/':\n",
+        "        x=num1/num2\n",
+        "        return x\n",
+        "opt=input('Enter oparetor: ')\n",
+        "num1=float(input('Enter 1st number: '))\n",
+        "num2=float(input('Enter 2nd number: '))\n",
+        "\n",
+        "print(numfuction(opt,num1,num2))\n"
+      ],
+      "metadata": {
+        "id": "fSCJnRpxEcRa"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#14\n",
+        "def print_sentence(s,n):\n",
+        "  div=\"\"\n",
+        "  ndiv=s[0]+\"\"\n",
+        "  for i in range(1,len(s)):\n",
+        "    if i%3==0:\n",
+        "      div+=s[i]\n",
+        "    else:\n",
+        "      ndiv+=s[i]\n",
+        "  return ndiv + div\n",
+        "\n",
+        "print_sentence(\"I love programming\",3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "z9X7qOd1G_DH",
+        "outputId": "ae7514ee-9ba7-4527-8611-5ae8ebc64d77"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'I lveprgrmmngo oai'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calculate_total(order_items, location=\"Dhanmondi\"):\n",
+        "    item_prices = {\n",
+        "        \"Rice\": 105,\n",
+        "        \"Potato\": 20,\n",
+        "        \"Chicken\": 250,\n",
+        "        \"Beef\": 510,\n",
+        "        \"Oil\": 85\n",
+        "    }\n",
+        "\n",
+        "    total_price = 0\n",
+        "    for item in order_items:\n",
+        "        if item in item_prices:\n",
+        "            total_price += item_prices[item]\n",
+        "\n",
+        "    if location == \"Dhanmondi\":\n",
+        "        delivery_fee = 30\n",
+        "    else:\n",
+        "        delivery_fee = 70\n",
+        "\n",
+        "    total_price += delivery_fee\n",
+        "\n",
+        "    return total_price\n",
+        "\n",
+        "# Taking user input for order items\n",
+        "order_items = input(\"Enter the items, separated by commas: \").split(\",\")\n",
+        "\n",
+        "# Taking user input for location\n",
+        "location = input(\"Enter the location: \")\n",
+        "\n",
+        "# Calculating and printing the total amount\n",
+        "total_amount = calculate_total(order_items, location)\n",
+        "print(\"Total amount:\", total_amount)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qFBqyAs2lWNa",
+        "outputId": "528bbbc7-23c1-4fde-915a-955c507a0f08"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the items, separated by commas: Rice,Beef,Rice\n",
+            "Enter the location: Mohakhali\n",
+            "Total amount: 790\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#16\n",
+        "def splitting_money(amount):\n",
+        "    notes = [500, 100, 50, 20, 10, 5, 2, 1]\n",
+        "    result = \"\"\n",
+        "\n",
+        "    for note in notes:\n",
+        "        count = amount // note\n",
+        "        if count > 0:\n",
+        "            result += f\"{note} Taka: {count} note(s)\\n\"\n",
+        "            amount -= count * note\n",
+        "\n",
+        "    return result\n",
+        "\n",
+        "# Taking user input for the amount of money\n",
+        "amount = int(input(\"Enter the amount of money: \"))\n",
+        "\n",
+        "# Calling the function and printing the result\n",
+        "split_result = splitting_money(amount)\n",
+        "print(split_result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZVqAAsB6mSGG",
+        "outputId": "2ccb70ed-1caf-4348-811c-870dffed0128"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the amount of money: 151\n",
+            "100 Taka: 1 note(s)\n",
+            "50 Taka: 1 note(s)\n",
+            "1 Taka: 1 note(s)\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def splitting_money(amount):\n",
+        "   notes=[500, 100, 50, 20, 10, 5, 2, 1]\n",
+        "   result=\"\"\n",
+        "   for note in notes:\n",
+        "    count=amount//note\n",
+        "    if count>0:\n",
+        "      result+=f\"{note} Taka: {count} note(s)\\n\"\n",
+        "      amount-=count*note\n",
+        "   return result\n",
+        "amount=(int(input()))\n",
+        "print(splitting_money(amount))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IzE5KyKTbWFJ",
+        "outputId": "33fe9098-f6eb-40e2-e5ea-924c574787d0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "151\n",
+            "100 Taka: 1 note(s)\n",
+            "50 Taka: 1 note(s)\n",
+            "1 Taka: 1 note(s)\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#17\n",
+        "def remove_odd(numbers):\n",
+        "    even_numbers = []\n",
+        "    for num in numbers:\n",
+        "        if num % 2 == 0:\n",
+        "            even_numbers.append(num)\n",
+        "    return even_numbers\n",
+        "\n",
+        "# Take user input for the list of numbers\n",
+        "input_str = input(\"Enter a list of numbers separated by spaces: \")\n",
+        "input_list = input_str.split(',')\n",
+        "\n",
+        "cleaned_input_list = []\n",
+        "for x in input_list:\n",
+        "    if x:\n",
+        "        cleaned_input_list.append(int(x))\n",
+        "\n",
+        "output_list = remove_odd(cleaned_input_list)\n",
+        "print(output_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "M7E-mpN6pTyi",
+        "outputId": "027cb665-546e-4ba3-a145-28acfab3de67"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a list of numbers separated by spaces: 21, 33, 44, 66, 11, 1, 88, 45, 10, 9\n",
+            "[44, 66, 88, 10]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def remove_odd(numbers):\n",
+        "     even=[]\n",
+        "     for num in numbers:\n",
+        "      if num%2==0:\n",
+        "        even.append(num)\n",
+        "     return even\n",
+        "a=input().split(\",\")\n",
+        "even1=[]\n",
+        "for i in a:\n",
+        "  if i:\n",
+        "    even1.append(int(i))\n",
+        "print( remove_odd(even1))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qeDemp9DdexB",
+        "outputId": "3f669cc4-0572-4d87-8a29-a578a7f81151"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "21, 33, 44, 66, 11, 1, 88, 45, 10, 9\n",
+            "[44, 66, 88, 10]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#18\n",
+        "def find_divisible_numbers(start, end, divisor1, divisor2):\n",
+        "    total_sum = 0\n",
+        "    for num in range(start, end):\n",
+        "        if (num % divisor1 == 0) != (num % divisor2 == 0):\n",
+        "            total_sum += num\n",
+        "    return total_sum\n",
+        "\n",
+        "# Take user input for the parameters\n",
+        "start_value = int(input(\"Enter the starting value (inclusive): \"))\n",
+        "end_value = int(input(\"Enter the ending value (exclusive): \"))\n",
+        "divisor1 = int(input(\"Enter the first divisor: \"))\n",
+        "divisor2 = int(input(\"Enter the second divisor: \"))\n",
+        "\n",
+        "result = find_divisible_numbers(start_value, end_value, divisor1, divisor2)\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0vjw2iWCpkwg",
+        "outputId": "aa0fc1ab-db59-4b07-d70d-11d31e6295d8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the starting value (inclusive): 10\n",
+            "Enter the ending value (exclusive): 40\n",
+            "Enter the first divisor: 4\n",
+            "Enter the second divisor: 7\n",
+            "210\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(start,end,div1,div2):\n",
+        "  sum=0\n",
+        "  for i in range(start,end):\n",
+        "    if (i%div1==0)!=(i%div2==0):\n",
+        "      sum+=i\n",
+        "  return sum\n",
+        "start=int(input())\n",
+        "end=int(input())\n",
+        "div1=int(input())\n",
+        "div2=int(input())\n",
+        "print(function_name(start,end,div1,div2))\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zif6lrhTjfFS",
+        "outputId": "212abba1-0c09-4869-cf10-cc0439c26877"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "40\n",
+            "4\n",
+            "7\n",
+            "210\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#19\n",
+        "def check_alphabets(input_string, required_alphabets):\n",
+        "    input_string = input_string.lower()\n",
+        "\n",
+        "    for letter in required_alphabets:\n",
+        "        if letter not in input_string:\n",
+        "            return 6\n",
+        "    return 5\n",
+        "\n",
+        "def print_statement_times(times):\n",
+        "    statement = \"PSG will win the Champions League this season\"\n",
+        "    for _ in range(times):\n",
+        "        print(statement)\n",
+        "\n",
+        "# Define the set of required alphabets\n",
+        "required_alphabets = 'abcdefghij'\n",
+        "\n",
+        "# Take user input for the string\n",
+        "input_str = input(\"Enter a string: \")\n",
+        "\n",
+        "result = check_alphabets(input_str, required_alphabets)\n",
+        "print_statement_times(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "P9cr5Tjfq9E0",
+        "outputId": "2be47b21-9a82-4bd3-ff62-cfe986a35ab9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a string: A black jackal is hunting a full grown deer\n",
+            "PSG will win the Champions League this season\n",
+            "PSG will win the Champions League this season\n",
+            "PSG will win the Champions League this season\n",
+            "PSG will win the Champions League this season\n",
+            "PSG will win the Champions League this season\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#19\n",
+        "def check_alphabets(input_string, required_alphabets):\n",
+        "    for letter in required_alphabets:\n",
+        "        uppercase_code = ord(letter)\n",
+        "        lowercase_code = uppercase_code + 32\n",
+        "        found = 0\n",
+        "\n",
+        "        for char in input_string:\n",
+        "            char_code = ord(char)\n",
+        "            if char_code == uppercase_code or char_code == lowercase_code:\n",
+        "                found = 1\n",
+        "                break\n",
+        "\n",
+        "        if found == 0:\n",
+        "            return 6\n",
+        "\n",
+        "    return 5\n",
+        "\n",
+        "def print_statement_times(times):\n",
+        "    statement = \"PSG will win the Champions League this season\"\n",
+        "    for _ in range(times):\n",
+        "        print(statement)\n",
+        "\n",
+        "# Define the set of required alphabets\n",
+        "required_alphabets = 'abcdefghij'\n",
+        "\n",
+        "# Take user input for the string\n",
+        "input_str = input(\"Enter a string: \")\n",
+        "\n",
+        "result = check_alphabets(input_str, required_alphabets)\n",
+        "print_statement_times(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N7ziJ1x5rsI2",
+        "outputId": "9f12d21d-f9b7-42f2-bc0d-05d0ce77406e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a string: A black jackal is hunting a full grown deer\n",
+            "PSG will win the Champions League this season\n",
+            "PSG will win the Champions League this season\n",
+            "PSG will win the Champions League this season\n",
+            "PSG will win the Champions League this season\n",
+            "PSG will win the Champions League this season\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "cdUvDBjAliNR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#20\n",
+        "def individul_bonus_calculation(player_name, yearly_earning, total_goals, bonus_percent):\n",
+        "    base_bonus = total_goals * (bonus_percent / 100) * yearly_earning\n",
+        "\n",
+        "    if total_goals > 30:\n",
+        "        additional_bonus = 10000\n",
+        "    elif 20 <= total_goals <= 30:\n",
+        "        additional_bonus = 5000\n",
+        "    else:\n",
+        "        additional_bonus = 0\n",
+        "\n",
+        "    total_bonus = base_bonus + additional_bonus\n",
+        "\n",
+        "    print(f\"{player_name} earned a bonus of {int(total_bonus)} Taka for {total_goals} goals.\")\n",
+        "\n",
+        "# Take user inputs\n",
+        "player_name = input(\"Enter player's name: \")\n",
+        "yearly_earning = float(input(\"Enter yearly earning: \"))\n",
+        "total_goals = int(input(\"Enter total goals scored: \"))\n",
+        "bonus_percent = float(input(\"Enter bonus percent per goal: \"))\n",
+        "\n",
+        "# Call the function with user inputs\n",
+        "individul_bonus_calculation(player_name, yearly_earning, total_goals, bonus_percent)"
+      ],
+      "metadata": {
+        "id": "KzCk2Wutse63"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task-20\n",
+        "def individul_bonus_calculation(name,earning,goal,bonus):\n",
+        "  bonus=goal*(bonus/100)*earning\n",
+        "  if goal>30:\n",
+        "    additional=100000\n",
+        "  elif 20<=goal<=30:\n",
+        "    additional=5000\n",
+        "  final=bonus+additional\n",
+        "  print(f\"{name} earned a bonus of {final} Taka for {goal} goals.\")\n",
+        "name=input()\n",
+        "earning=int(input())\n",
+        "goal=int(input())\n",
+        "bonus=int(input())\n",
+        "individul_bonus_calculation(name,earning,goal,bonus)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IwTkFysomvKv",
+        "outputId": "eabdbf89-3569-4214-8217-731f8808e263"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Neymar\n",
+            "1200000\n",
+            "35\n",
+            " 5\n",
+            "Neymar earned a bonus of 2200000.0 Taka for 35 goals.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#21\n",
+        "def individul_bonus_calculation(player_name, yearly_earning, total_goals, bonus_percent):\n",
+        "    base_bonus = total_goals * (bonus_percent / 100) * yearly_earning\n",
+        "\n",
+        "    if total_goals > 30:\n",
+        "        additional_bonus = 10000\n",
+        "    elif 20 <= total_goals <= 30:\n",
+        "        additional_bonus = 5000\n",
+        "    else:\n",
+        "        additional_bonus = 0\n",
+        "\n",
+        "    total_bonus = base_bonus + additional_bonus\n",
+        "\n",
+        "    return total_bonus\n",
+        "\n",
+        "def cal_bonus(*players):\n",
+        "    for player in players:\n",
+        "        player_name, yearly_earning, total_goals, bonus_percent = player\n",
+        "        bonus = individul_bonus_calculation(player_name, yearly_earning, total_goals, bonus_percent)\n",
+        "        print(f\"{player_name} earned a bonus of {bonus} Taka for {total_goals} goals.\")\n",
+        "\n",
+        "# Example usage\n",
+        "cal_bonus((\"Neymar\", 1200000, 35, 5), (\"Messi\", 1500000, 25, 6))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4ygPYBEBt8Ff",
+        "outputId": "103a5784-e1ca-48c7-91b4-0f30b06dc8f5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Neymar earned a bonus of 2110000.0 Taka for 35 goals.\n",
+            "Messi earned a bonus of 2255000.0 Taka for 25 goals.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def individul_bonus_calculation(player_name, yearly_earning, total_goals, bonus_percent):\n",
+        "    base_bonus = total_goals * (bonus_percent / 100) * yearly_earning\n",
+        "\n",
+        "    if total_goals > 30:\n",
+        "        additional_bonus = 10000\n",
+        "    elif 20 <= total_goals <= 30:\n",
+        "        additional_bonus = 5000\n",
+        "    else:\n",
+        "        additional_bonus = 0\n",
+        "\n",
+        "    total_bonus = base_bonus + additional_bonus\n",
+        "\n",
+        "    print(f\"{player_name} earned a bonus of {total_bonus} Taka for {total_goals} goals.\")\n",
+        "\n",
+        "def cal_bonus(*args):\n",
+        "    for player_data in args:\n",
+        "        individul_bonus_calculation(*player_data)\n",
+        "\n",
+        "# Example usage\n",
+        "cal_bonus((\"Neymar\", 1200000, 35, 5), (\"Messi\", 1500000, 25, 6))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "49BDeetTuYa3",
+        "outputId": "e6c25e00-d066-4eda-9917-f84685a4c159"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Neymar earned a bonus of 2110000.0 Taka for 35 goals.\n",
+            "Messi earned a bonus of 2255000.0 Taka for 25 goals.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Worksheet-6\n",
+        "def fA( ):\n",
+        "    print(\"Hello\")\n",
+        "\n",
+        "fA( )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-yr2WwmWlr5G",
+        "outputId": "1d89cf87-79ca-4c75-cd16-0b1cea3bdbdd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def find_sum (x):\n",
+        "    sum=0\n",
+        "    for i in x:\n",
+        "        sum+=i\n",
+        "    return sum\n",
+        "print(find_sum([5,4,-2]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RyEJZvj7rxLB",
+        "outputId": "3ac4ac5a-ff28-42ea-f821-0089fa173373"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sum_mul (x, y):\n",
+        "    return x+y\n",
+        "    return x*y\n",
+        "\n",
+        "sum, mul= sum_mul(2, 5))\n",
+        "print(sum)\n",
+        "print(mul)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 245
+        },
+        "id": "o_Id5CS6r_hW",
+        "outputId": "2e594da4-c9ac-4a76-d46c-6e382b731f20"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-7-a62a9652d749>\u001b[0m in \u001b[0;36m<cell line: 5>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0;32mreturn\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0my\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 5\u001b[0;31m \u001b[0msum\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mmul\u001b[0m\u001b[0;34m=\u001b[0m \u001b[0msum_mul\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m5\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      6\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msum\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      7\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmul\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: sum_mul() missing 1 required positional argument: 'y'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def list_to_string(lst):\n",
+        "    result=\"\"\n",
+        "    for item in lst:\n",
+        "        result+=item\n",
+        "    return result\n",
+        "\n",
+        "# Function Call #1:\n",
+        "n=input().split(\",\")\n",
+        "print(list_to_string(n))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GojDjIn6-zEl",
+        "outputId": "037efb06-ddaf-47d0-a4ab-39e853aceae3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[\"Hi\", 12, \"3\", 5.5, True]\n",
+            "[\"Hi\" 12 \"3\" 5.5 True]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#A\n",
+        "def list_to_string(lst):\n",
+        "    result = \"\"\n",
+        "    for item in lst:\n",
+        "        result += str(item)\n",
+        "    return result\n",
+        "\n",
+        "# Function Call #1:\n",
+        "print(list_to_string([\"Hi\", 12, \"3\", 5.5, True]))\n",
+        "# Output:\n",
+        "# Hi1235.5True\n",
+        "\n",
+        "# Function Call #2:\n",
+        "print(list_to_string([-5, 0.3, \"3\"]))\n",
+        "# Output:\n",
+        "# -50.33"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XVYt4qM7AhTd",
+        "outputId": "9d1f275f-ae6d-4a9f-c1ec-9c1d5a7c1d6b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hi1235.5True\n",
+            "-50.33\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def list_to_string(x):\n",
+        "  c=\"\"\n",
+        "  for i in x:\n",
+        "    c+=str(i)\n",
+        "  return c\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(list_to_string([\"Hi\", 12, \"3\", 5.5, True]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rq41375r1dpx",
+        "outputId": "e29872eb-d36e-4374-8ebc-83b538b4e2fc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hi1235.5True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def list_to_string(x):\n",
+        "  y=\"\"\n",
+        "  for i in x:\n",
+        "    y+=str(i)\n",
+        "  return y\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(list_to_string([\"Hi\", 12, \"3\", 5.5, True]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aqnC2DRtw3Q-",
+        "outputId": "043ed07a-c9f7-47cc-a261-86cc8993ffae"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hi1235.5True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#B\n",
+        "def makeTuple(x):\n",
+        "  result=[]\n",
+        "  for key in x:\n",
+        "      if key[0]==key[-1]:\n",
+        "        result.append(x[key])\n",
+        "  return tuple(result)\n",
+        "print(makeTuple({'bat': 311, 'madam': 512, \"hurrah\": 650, 'race car': 753, 'car':310}))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zy9d4sI0BsIF",
+        "outputId": "5f198059-31aa-4814-dc2f-cc73fde06b2a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(512, 650, 753)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def makeTuple(x):\n",
+        "  result=[]\n",
+        "  for key in x:\n",
+        "    if key[0]==key[-1]:\n",
+        "      result.append(x[key])\n",
+        "  return tuple(result)\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "dictionary = {\"bat\": 311, \"madam\": 512, \"hurrah\": 650, \"race car\": 753, \"car\":310}\n",
+        "print(makeTuple(dictionary))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i_bWDfol2Uuk",
+        "outputId": "f20fcdc4-2bf4-485b-91e2-3ecada3feb16"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(512, 650, 753)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def makeTuple(x):\n",
+        "    result = []\n",
+        "    for key in x:\n",
+        "        if key[0] == key[-1]:\n",
+        "            result.append(x[key])\n",
+        "    return tuple(result)\n",
+        "\n",
+        "print(makeTuple({'bat': 311, 'madam': 512, \"hurrah\": 650, 'race car': 753, 'car': 310}))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rXsP4-2lD9Of",
+        "outputId": "0cfcb2e5-ea22-4b8d-97d4-4da7725e1817"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(512, 650, 753)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def maketuple(dictionary):\n",
+        "  l=[]\n",
+        "  for key in dictionary:\n",
+        "      if key[0]==key[-1]:\n",
+        "        l.append(dictionary[key])\n",
+        "  return tuple(l)\n",
+        "\n",
+        "\n",
+        "dictionary={'bat': 311, 'madam': 512, \"hurrah\": 650, 'race car': 753, 'car':310}\n",
+        "print(maketuple(dictionary))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lJKzdEve04q1",
+        "outputId": "7674bcba-4f06-4d3b-ac43-20a332b6d6c0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(512, 650, 753)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def lower_vowel_extractor(x):\n",
+        "  y=[]\n",
+        "  a=\"AEIOUaeiou\"\n",
+        "  for i in x:\n",
+        "    if i in a:\n",
+        "      if i not in y:\n",
+        "        y.append(i)\n",
+        "  return y\n",
+        "\n",
+        "print(lower_vowel_extractor (\"Hey wait, what is up?\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7ajJQK2CFX7U",
+        "outputId": "492b59e7-2e4f-47de-c3b1-43ed83fa7ac3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['e', 'a', 'i', 'u']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def more_than_avg(x):\n",
+        "  y=[]\n",
+        "  sum=0\n",
+        "  for i in x:\n",
+        "    for j in i:\n",
+        "      sum+=len(j)\n",
+        "      sum=0\n",
+        "  avr=sum/len(i)\n",
+        "  for i in x:\n",
+        "    for j in i:\n",
+        "      if len(j)>avr:\n",
+        "        y.append(i)\n",
+        "  m=avr,y\n",
+        "  return tuple(m)\n",
+        "print(more_than_avg([\"I\",\"love\",\"Programming\",\"in\",\"Python\"]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X8cEthGHITNL",
+        "outputId": "94c1becb-8639-4f47-ab92-7727085c8fff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(0.0, ['I', 'love', 'love', 'love', 'love', 'Programming', 'Programming', 'Programming', 'Programming', 'Programming', 'Programming', 'Programming', 'Programming', 'Programming', 'Programming', 'Programming', 'in', 'in', 'Python', 'Python', 'Python', 'Python', 'Python', 'Python'])\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def more_than_avg(lst):\n",
+        "    total_length = 0\n",
+        "    for s in lst:\n",
+        "        total_length += len(s)\n",
+        "\n",
+        "    avg_length = total_length / len(lst)\n",
+        "\n",
+        "    above_avg = []\n",
+        "    for s in lst:\n",
+        "        if len(s) > avg_length:\n",
+        "            above_avg.append(s)\n",
+        "\n",
+        "    return avg_length, above_avg\n",
+        "\n",
+        "# Function Call #1:\n",
+        "print(more_than_avg([\"I\", \"love\", \"Programming\", \"in\", \"Python\"]))\n",
+        "# Output:\n",
+        "# (4.8, ['Programming', 'Python'])\n",
+        "\n",
+        "# Function Call #2:\n",
+        "print(more_than_avg([\"CSE110's\", \"Final\", \"Examination\", \"is\", \"extremely\", \"easy\"]))\n",
+        "# Output:\n",
+        "# (7.166666666666667, [\"CSE110's\", 'Examination', 'extremely'])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BypgOsCoKvMP",
+        "outputId": "7ebb370f-6994-45a6-a734-cf2085a7a8fd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(4.8, ['Programming', 'Python'])\n",
+            "(6.5, [\"CSE110's\", 'Examination', 'extremely'])\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def BigWordsFinder(x):\n",
+        "  y=[]\n",
+        "  for i in x:\n",
+        "     for j in i:\n",
+        "       if ord(i)>700:\n",
+        "      y.append(i)\n",
+        "    else:\n",
+        "      return \"No big word found\"\n",
+        "x=input().split()\n",
+        "print(BigWordsFinder(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wenhOxXEuAw8",
+        "outputId": "b5146629-8c7c-4647-f675-7a42bebae9ad"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A serial killer is typically a person who murders three  or more persons with each murder taking place over more than a month\n",
+            "No big word found\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def cumulative_ascii(word):\n",
+        "    total_ascii = 0\n",
+        "    for char in word:\n",
+        "        total_ascii += ord(char)\n",
+        "    return total_ascii\n",
+        "\n",
+        "def BigWordsFinder(s):\n",
+        "    big_words = []\n",
+        "    for word in s.split():\n",
+        "        if cumulative_ascii(word) > 700:\n",
+        "            big_words.append(word)\n",
+        "\n",
+        "    if len(big_words) > 0:\n",
+        "        return big_words\n",
+        "    else:\n",
+        "        return \"No big word found\"\n",
+        "\n",
+        "user_input = input(\"Enter a string: \")\n",
+        "print(BigWordsFinder(user_input))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "stmtewZXwdcI",
+        "outputId": "70d0c758-ab7f-43a0-c4d2-483cd28b10bb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a string: A serial killer is typically a person who murders three  or more persons with each murder taking place over more than a month\n",
+            "['typically', 'murders', 'persons']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def BigWordsFinder(s):\n",
+        "    big_words = []\n",
+        "\n",
+        "    for word in s.split():\n",
+        "        total_ascii = 0\n",
+        "        for char in word:\n",
+        "            total_ascii += ord(char)\n",
+        "    if total_ascii > 700:\n",
+        "            big_words.append(word)\n",
+        "            return big_words\n",
+        "    else:\n",
+        "          return \"No big word found\"\n",
+        "\n",
+        "\n",
+        "   # if len(big_words) > 0:\n",
+        "       # return big_words\n",
+        "    #else:\n",
+        "       # return \"No big word found\"\n",
+        "\n",
+        "user_input = input(\"Enter a string: \")\n",
+        "print(BigWordsFinder(user_input))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "W2I_SrXYzoNS",
+        "outputId": "16bb1cb1-45af-40e7-97f3-ff350b6ac727"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a string: A serial killer is typically a person who murders three  or more persons with each murder taking place over more than a month\n",
+            "No big word found\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#E\n",
+        "def BigWordsFinder(s):\n",
+        "    big_words = []\n",
+        "\n",
+        "    for word in s.split():\n",
+        "        total_ascii = 0\n",
+        "        for char in word:\n",
+        "            total_ascii += ord(char)\n",
+        "        if total_ascii > 700:\n",
+        "            big_words.append(word)\n",
+        "\n",
+        "    if not big_words:\n",
+        "        return  \"No big word found\"\n",
+        "    else:\n",
+        "        return  big_words\n",
+        "\n",
+        "user_input = input(\"Enter a string: \")\n",
+        "print(BigWordsFinder(user_input))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iXjMejDM1GXo",
+        "outputId": "8fe2a6bc-853d-4b40-880d-09fb62c6317d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a string: A serial killer is typically a person who murders three  or more persons with each murder taking place over more than a month\n",
+            "['typically', 'murders', 'persons']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def BigWordsFinder(x):\n",
+        "  l=[]\n",
+        "  for i in x.split():\n",
+        "    sum=0\n",
+        "    for j in i:\n",
+        "      sum+=ord(j)\n",
+        "    if sum>700:\n",
+        "      l.append(i)\n",
+        "  if not l:\n",
+        "      return \"No big word found\"\n",
+        "  else:\n",
+        "      return l\n",
+        "user_input = input(\"Enter a string: \")\n",
+        "print(BigWordsFinder(user_input))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Y2RdBhIG1qKv",
+        "outputId": "fa6512e5-7569-4105-b93f-b22d37b09c8f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a string: A serial killer is typically a person who murders three  or more persons with each murder taking place over more than a month\n",
+            "['typically', 'murders', 'persons']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sampleFunction(x):\n",
+        "  for i in x:\n",
+        "    if 65<=ord(i[0])<=90:\n",
+        "      result= True\n",
+        "    else:\n",
+        "      result=False\n",
+        "  if False:\n",
+        "    return False\n",
+        "  else:\n",
+        "    return True\n",
+        "#print(sampleFunction(Mr Alex Benjamin))\n",
+        "print(sampleFunction(\"Mr Alex benjamin\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0J7mPTR35_Jz",
+        "outputId": "b828dcbd-7f1b-4e81-fb1c-22f0bb7c95ae"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sampleFunction(x):\n",
+        "  for i in x:\n",
+        "    if 65<=ord(i)<=90:\n",
+        "      result=True\n",
+        "    else:\n",
+        "      result=False\n",
+        "  if False:\n",
+        "    return False\n",
+        "  else:\n",
+        "    return True\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(sampleFunction(\"Mr Alex Benjamin\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7B62Xjas4XmW",
+        "outputId": "fe09db67-1660-44a9-ec36-c9bbe0a93b47"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#F\n",
+        "def sampleFunction(name):\n",
+        "    words = name.split()\n",
+        "    for word in words:\n",
+        "        if not ('A' <= word[0] <= 'Z'):\n",
+        "            return False\n",
+        "        for char in word[1:]:\n",
+        "            if not ('a' <= char <= 'z'):\n",
+        "                return False\n",
+        "    return True\n",
+        "\n",
+        "# Function Call #1:\n",
+        "print(sampleFunction(\"Mr Alex Benjamin\"))\n",
+        "# Output:\n",
+        "# True\n",
+        "\n",
+        "# Function Call #2:\n",
+        "print(sampleFunction(\"Mr Alex benjamin\"))\n",
+        "# Output:\n",
+        "# False"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dZ-AA6Sh9df6",
+        "outputId": "2d2216aa-1459-4859-8bfe-ce5eb6e72e09"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def dictionary_by_length(x):\n",
+        "  d={}\n",
+        "  for i in x:\n",
+        "   if len(i) not in d:\n",
+        "    d[len(i)]=[i]\n",
+        "   else:\n",
+        "     d[len(i)].append(i)\n",
+        "\n",
+        "\n",
+        "  return d\n",
+        "\n",
+        "print(dictionary_by_length(['apple', 'cat', 'dog', 'banana', 'fish']))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "v7MkyOwZDlyX",
+        "outputId": "9a852f11-72b8-4046-a853-c076fea59fb3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{5: ['apple'], 3: ['cat', 'dog'], 6: ['banana'], 4: ['fish']}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def dictionary_by_length(x):\n",
+        "  d={}\n",
+        "  for i in x:\n",
+        "    if len(i) not in d:\n",
+        "      d[len(i)]=[i]\n",
+        "    else:\n",
+        "      d[len(i)].append(i)\n",
+        "  return d\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(dictionary_by_length(['apple', 'cat', 'dog', 'banana', 'fish']))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5dSReCva5hjB",
+        "outputId": "47b13c93-643a-4976-d538-f17604e321bf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{5: ['apple'], 3: ['cat', 'dog'], 6: ['banana'], 4: ['fish']}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def product_of_list(x):\n",
+        "  product=1\n",
+        "  l=[]\n",
+        "  for key in x:\n",
+        "    for val in x[key]:\n",
+        "      product*=ord(val)\n",
+        "    l.append(product)\n",
+        "    product=1\n",
+        "  return tuple(l)\n",
+        "\n",
+        "print(product_of_list({'C':['g','m'], 'B':['b','z'], 'A':['a','c']}))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bqJlvgBgGK8B",
+        "outputId": "b56add4e-7164-4c6c-de6b-ba967b4d06bc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(11227, 11956, 9603)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def product_of_list(x):\n",
+        "  product=1\n",
+        "  l=[]\n",
+        "  for key in x:\n",
+        "    for val in x[key]:\n",
+        "      product*=ord(val)\n",
+        "    l.append(product)\n",
+        "    product=1\n",
+        "  return tuple(l)\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(product_of_list({'C':['g','m'], 'B':['b','z'], 'A':['a','c']}))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6s7VSqFW6dza",
+        "outputId": "1abbe079-a55f-42bb-8035-b1bfe5d37a72"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(11227, 11956, 9603)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#I\n",
+        "def ascii_summation(x):\n",
+        "    d = {}\n",
+        "    max_sum = 0\n",
+        "    min_sum = None\n",
+        "\n",
+        "    for i in x:\n",
+        "        sum = 0\n",
+        "        for j in i:\n",
+        "            sum += ord(j)\n",
+        "\n",
+        "        if sum > max_sum:\n",
+        "            max_sum = sum\n",
+        "            d[max_sum] = i\n",
+        "        if min_sum is None or sum < min_sum:\n",
+        "            min_sum = sum\n",
+        "            d[min_sum] = i\n",
+        "\n",
+        "    return d\n",
+        "\n",
+        "print(ascii_summation([\"Disorder\", \"Chaos\", \"Anarchy\", \"Crime\", \"Lawless\"]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EYm8350IvHeB",
+        "outputId": "234e8a62-517e-4b8d-8159-f819f84fc286"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{828: 'Disorder', 494: 'Chaos'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def ascii_summation(x):\n",
+        "  d={}\n",
+        "  max=-99999999\n",
+        "  min=99999999\n",
+        "  for i in x:\n",
+        "    sum=0\n",
+        "    for j in i:\n",
+        "      sum+=ord(j)\n",
+        "    if sum>max:\n",
+        "      max=sum\n",
+        "      d[max]=i\n",
+        "    if min is None or sum<min:\n",
+        "      min=sum\n",
+        "      d[min]=i\n",
+        "  return d\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(ascii_summation([\"Disorder\", \"Chaos\", \"Anarchy\", \"Crime\", \"Lawless\"]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "I4gA4eLc8ge7",
+        "outputId": "813bd687-8694-4314-cc3f-2f19bf680db3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{828: 'Disorder', 494: 'Chaos'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(x):\n",
+        "  y=\"AEIOUaeiou\"\n",
+        "  z=[]\n",
+        "  for i in x:\n",
+        "    if i in y:\n",
+        "      if i in z:\n",
+        "        count+=1\n",
+        "\n",
+        "print(function_name(\"hello hi how are you\"))"
+      ],
+      "metadata": {
+        "id": "ITBMFQDLEbyf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def vowel_positions(s):\n",
+        "    vowels = \"AEIOUaeiou\"\n",
+        "    vowel_counts = {}\n",
+        "\n",
+        "    for i, char in enumerate(s):\n",
+        "        if char in vowels:\n",
+        "            if char in vowel_counts:\n",
+        "                vowel_counts[char].append(i)\n",
+        "            else:\n",
+        "                vowel_counts[char] = [i]\n",
+        "\n",
+        "    result = {}\n",
+        "    for vowel, positions in vowel_counts:\n",
+        "        if len(positions) >= 2:\n",
+        "            result[vowel] = positions\n",
+        "\n",
+        "    return result\n",
+        "\n",
+        "input_string = \"hello hi how are you\"\n",
+        "print(vowel_positions(input_string))"
+      ],
+      "metadata": {
+        "id": "HE5ORe1lF924"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def vowel_positions(s):\n",
+        "    vowels = \"AEIOUaeiou\"\n",
+        "    vowel_counts = {}\n",
+        "\n",
+        "    for i, char in enumerate(s):\n",
+        "        if char in vowels:\n",
+        "            if char in vowel_counts:\n",
+        "                vowel_counts[char].append(i)\n",
+        "            else:\n",
+        "                vowel_counts[char] = [i]\n",
+        "\n",
+        "    result = {}\n",
+        "    for vowel, positions in vowel_counts.items():\n",
+        "        if len(positions) >= 2:\n",
+        "            result[vowel] = positions\n",
+        "\n",
+        "    return result\n",
+        "\n",
+        "input_string = \"hello hi how are you\"\n",
+        "print(vowel_positions(input_string))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "P9Ey97yMGO7C",
+        "outputId": "0937bce4-3561-45b3-d762-703028e1e501"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'e': [1, 15], 'o': [4, 10, 18]}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(s):\n",
+        "    vowels = \"AEIOUaeiou\"\n",
+        "    vowel_counts = {}\n",
+        "\n",
+        "    position = 0\n",
+        "    for char in s:\n",
+        "        if char in vowels:\n",
+        "            if char in vowel_counts:\n",
+        "                vowel_counts[char].append(position)\n",
+        "            else:\n",
+        "                vowel_counts[char] = [position]\n",
+        "        position += 1\n",
+        "\n",
+        "    result = {}\n",
+        "    for vowel in vowel_counts:\n",
+        "        positions = vowel_counts[vowel]\n",
+        "        if len(positions) >= 2:\n",
+        "            result[vowel] = positions\n",
+        "\n",
+        "    return result\n",
+        "\n",
+        "print(function_name(\"hello hi how are you\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LJujaR78GtXT",
+        "outputId": "78517d79-acd4-4a4f-87ae-95e0d2bfd36e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'e': [1, 15], 'o': [4, 10, 18]}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def function_name(x):\n",
+        "  vowels=\"AEIOUaeiou\"\n",
+        "  d={}\n",
+        "  pos=0\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(print(function_name(\"hello hi how are you\")))"
+      ],
+      "metadata": {
+        "id": "SZPUUNF_-G4O"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a={'e': [1, 15], 'o': [4, 10, 18]}\n",
+        "#for key in a:\n",
+        "\n",
+        "\n",
+        "print(a[e])"
+      ],
+      "metadata": {
+        "id": "5oO6T6gA-Gxu",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 211
+        },
+        "outputId": "1ca9e706-4d85-478c-da36-c60c2354770c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-4-0bf42f901e98>\u001b[0m in \u001b[0;36m<cell line: 4>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;31m#for key in a:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ma\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0me\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'e' is not defined"
+          ]
+        }
+      ]
+    }
+  ]
+}
